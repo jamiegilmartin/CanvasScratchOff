@@ -1,0 +1,51 @@
+@import url( reset.css );
+
+body {
+	font-family: 'Myriad Pro', Arial, Helvetica, sans-serif; 
+	font-size:100%;
+	background:#333 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAH0lEQVQIHWO0s4v5z4ADsIDEv369jlWaCasoVHAgJAFGWgSoQWvBMQAAAABJRU5ErkJggg==);
+
+}
+
+
+div#scratchWrap {
+	width:600px;
+	margin:100px auto;
+	overflow:hidden;
+	border:1px dashed red;
+}
+canvas#scratchCanvas {
+	float:left;
+}
+
+.coinScratcher canvas#scratchCanvas {
+	cursor: crosshair;
+	cursor: url('../images/toonie.png') 50 70, crosshair;
+}
+
+.fingerScratcher canvas#scratchCanvas {
+	cursor: crosshair;
+	cursor: url('../images/finger.png')  -90 -90, crosshair;
+}
+
+.shellScratcher canvas#scratchCanvas {
+	cursor: crosshair;
+	cursor: url('../images/shell.png')  90 -45, crosshair;
+}
+
+.pickScratcher canvas#scratchCanvas {
+	cursor: crosshair;
+	cursor: url('../images/pick.png')  75 90, crosshair;
+}
+
+ul.scratchList {
+	width:50px;
+	padding:25px;
+	float:right;
+}
+ul.scratchList li {
+	padding-bottom:25px;
+}
+ul.scratchList li a {
+	display:block;
+}
